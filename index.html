@@ -15,14 +15,16 @@
 
 </head>
 <body>
-    <header class="header-mobile">
+    <header>
         <img src="./assets/images/logo.svg" alt="Logo do site de notícias W.">
 
         <button>
             <img src="./assets/images/icon-menu.svg" alt="ícone do menu hamburguer">
         </button>
 
-        <nav>
+        
+
+        <nav class="mobile">
 
             <button>
                 <img src="./assets/images/icon-menu-close.svg" alt="ícone de x para fechar o menu">
@@ -35,12 +37,28 @@
             <a href="#">Categorias</a>
         </nav>
 
+        <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+        </nav>
+
     </header>
+
+
 
     <main>
 
         <section class="primeira-secao">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="ícone de puzzle colorido">
+
+            <picture>
+                <source media="(min-width:700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="ícone de puzzle colorido">
+            </picture>
+
+            
             <h1>O futuro brilhante da Web 3.0</h1>
             <p>Descubra como a Web 3.0 está revolucionando a internet! Prepare-se para um futuro onde a descentralização, a privacidade e o controle dos dados estão nas mãos dos usuários. Fique por dentro das inovações que prometem transformar a forma como navegamos e interagimos online. Não perca essa jornada rumo à próxima era digital!</p>
             <button>Ler Mais</button>
